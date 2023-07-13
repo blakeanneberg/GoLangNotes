@@ -25,13 +25,20 @@ Packages
   -Needs a function `main()`
   -`main()` is where the code execution starts
 
+| Pro   | Con    |
+|--------------- | --------------- |
+| Icecream   | cake   |
+
+
+
+
 Go Tool:
-- `go build`
-  - compiles the program
-  - creates an executable for the main package, same name as the first .go file
-  - .exe suffix for executable in winds
-- `go doc`
-  - prints documentation for a package
-- `go format`
-  - formats source code files
+-`go build`
+  -compiles the program
+  -creates an executable for the main package, same name as the first .go file
+  -.exe suffix for executable in winds
+-`go doc`
+  -prints documentation for a package
+-`go format`
+  -formats source code files
 
