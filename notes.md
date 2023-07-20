@@ -1,8 +1,8 @@
 Links: 
 - GoLangDocs: https://go.dev/doc/#learning
+- Coursera: https://www.coursera.org/learn/golang-getting-started/home/welcome
 
 Notes: 
-
 Object-Oriented Programming:
 -Organize your code though encapsulation
 -Group together data and functions which are related.
