@@ -31,7 +31,6 @@ Packages
 
 
 
-
 Go Tool:
 -`go build`
   -compiles the program
@@ -42,3 +41,5 @@ Go Tool:
 -`go format`
   -formats source code files
 
+Variables:
+'var x int' `var x int`
