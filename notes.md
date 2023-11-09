@@ -46,8 +46,8 @@ Object-Oriented Programming:
 
 ## Basic data types
 - Pointers: an address to data in memory and have operators
-  - & operator returns the address of a variable/function, put in front of a variable, will return the address of that variable. 
-  - * operator returns data at an address (opposite of & called dereferrencing), if put * in front of adddress, will give you data at that address
+  - `&` operator returns the address of a variable/function, put in front of a variable, will return the address of that variable. 
+  - `*` operator returns data at an address (opposite of & called dereferrencing), if put * in front of adddress, will give you data at that address
   ``` golang
   var x int = 1 
   var y int
