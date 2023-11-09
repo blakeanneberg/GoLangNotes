@@ -42,18 +42,21 @@ Object-Oriented Programming:
   -formats source code files
 
 ## Variables:
-'var x int' `var x int`
+`var x int` `var x int`
 
 ## Basic data types
 - Pointers: an address to data in memory and have operators
   - `&` operator returns the address of a variable/function, put in front of a variable, will return the address of that variable. 
-  - `*` operator returns data at an address (opposite of & called dereferrencing), if put * in front of adddress, will give you data at that address
+  - `*` operator returns data at an address (opposite of & called dereferencing), if put * in front of address, will give you data at that address
   ``` golang
   var x int = 1 
-  var y int
+  var y int // not inilizied so it default to zero
   var ip *int // ip is pointer to int
 
   ip = &x // ip now points to x 
   y = *op // y is now 1
   ``` 
+dfaa sdaf asdf sdf 
+
+
 
