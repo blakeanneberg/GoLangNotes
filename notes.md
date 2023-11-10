@@ -45,6 +45,30 @@ Object-Oriented Programming:
 - `var x int` `var x int`
 - `new()` function creates a variable and returns a pointer to the variable. Variable is initialized to zero by default. 
 
+### Variable Scope:
+- Places in code where a variable can be accessed
+``` golang
+var x = 4 
+
+func f() {
+  fmt.Printf("%d", x)
+}
+func g() {
+  fmt.Printf("%d", x)
+}
+```
+- Blocks
+  - A sequence of declaratins and statements within matching brackets, {}
+  - Including functiion definitions
+  - Universe block: all Go source
+  - Package block: all source in a package
+  - File block: all source in a file
+  - Code inside the statement: "if", "for", "switch"
+  - Clauses in "switch" or "select": individual clauses each get a block
+
+- Lexical Scoping
+  - Go is lexically scoped using blocks: bi >= bj if bj is defined inside bi
+
 ## Basic data types
 - Pointers: an address to data in memory and have operators
   - `&` operator returns the address of a variable/function, put in front of a variable, will return the address of that variable. 
