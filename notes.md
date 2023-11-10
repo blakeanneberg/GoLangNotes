@@ -42,7 +42,8 @@ Object-Oriented Programming:
   -formats source code files
 
 ## Variables:
-`var x int` `var x int`
+- `var x int` `var x int`
+- `new()` function creates a variable and returns a pointer to the variable. Variable is initialized to zero by default. 
 
 ## Basic data types
 - Pointers: an address to data in memory and have operators
@@ -56,7 +57,10 @@ Object-Oriented Programming:
   ip = &x // ip now points to x 
   y = *op // y is now 1
   ``` 
-dfaa sdaf asdf sdf 
-
+  - see `new()` 
+  ```
+  ptr := new(int)
+  *ptr = 3
+  ``` 
 
 
