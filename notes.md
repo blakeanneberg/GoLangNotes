@@ -58,7 +58,7 @@ Object-Oriented Programming:
   y = *op // y is now 1
   ``` 
   - see `new()` 
-  ```
+  ``` golang
   ptr := new(int)
   *ptr = 3
   ``` 
