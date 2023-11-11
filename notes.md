@@ -96,4 +96,25 @@ func g() {
   ```
 
 - Integers
+  - Generic int declaration
+    ``` golang 
+
+    var x int 
+
+    ```
   
+  - Different lengths and signs: int8, int16, int32, int64, uint8, uint16, uint32, uint64
+  - Binary operators
+    - Arthmetric: = - * / % << >>
+    - Comparison: == != > < >= <=
+    - Boolian && || 
+
+  - Type conversion: most binary operations need operatnd of same type. Ex including assignments
+  ```golang
+  var x int32 = 1
+  var y int16 = 2 
+  x = y 
+  ```
+  - Convert type with T()operation
+  x = int32(y)
+
