@@ -118,3 +118,37 @@ func g() {
   - Convert type with T()operation
   x = int32(y)
 
+  - Floating points: real numbers, ex `float32` gives your ~6 digitis of precision, `float64` gives you ~15 digitis of precesion  
+    - Express using decimals or scientific notation 
+    ```golang
+    var x float64 = 123.45
+    var y float64 = 1.2345e2
+    ```
+    - Complex numbers represented as two floats: real and imaginary
+    ```
+    var z complex128 =
+    complex(2,3)
+    ```
+
+- Strings
+  - ASCII and Unicode
+    - Character coding - each character is associated with an (7) 8-Bit number ex. 'A'=0x41 in hexidesimal 
+    - Unicode is 32-bit character. UTF-* is variable length 8-bit UTF codes are the same as ASCII  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
