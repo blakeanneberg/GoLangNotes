@@ -125,7 +125,7 @@ func g() {
     var y float64 = 1.2345e2
     ```
     - Complex numbers represented as two floats: real and imaginary
-    ```
+    ```golang
     var z complex128 =
     complex(2,3)
     ```
