@@ -87,4 +87,13 @@ func g() {
   *ptr = 3
   ``` 
 
+- Printing
+  - Conversion characters for each argument
+  ``` golang
 
+  fmt.Printf("hi %s", x)
+
+  ```
+
+- Integers
+  
