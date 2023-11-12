@@ -151,13 +151,129 @@ func g() {
     ToLower(r rune)
     ```
   - Strings Package of functions to manipulate UTF-8 encoded strings, strings are immutable but moddifed strings are returned
-    - `compare (a, B)` returns an integer comparing two strings lexicongraphally. 0 if a==b if a < b, and +1 if a > b. 
+    - `compare (a, B)` returns an integer comparing two strings lexicographically. 0 if a==b if a < b, and +1 if a > b. 
     - `Contains(s, substr)` returns true if substring is inside s
     - `Replace(s, old, new, n)` replace returns a copy of the string s with the first n instances of old replaced by new
     - `ToLower(s)`
     - `ToUpper(s)`
     - `TrimSpace(s)` returns a new string with all leading and trailing white space removed
+  - Strconv Package
+    - conversion to and from string representations of basic data types
+    - `Atoi (s)` converts string s to int
+    - `Itoa (s)` converts int (base 10) to string
+    - `FormatFloat (f, fmt, prec, bitSize)` converts floating point number to a string
+    - `ParseFloat (s, bitSize)` converts a string to a floating point number
+  - Constants
+    - Expression whose value is known at compile time.
+    - Type is inferred from right-hand side (boolean, string, number)
+    ```golang
+    const x = 1.3 
+    const ()
+      y = 4 
+      z = "Hi"
+    ```
+    - Iota example, each constant is assigned to a unique integer, constants must be different but actual value is not important
+    ```golang 
+    type Grades int
+    const (
+      A Grades = iota
+      B
+      C
+      D
+      F
+    )
+    ```
+  - Control flow
+    - statements which alter control flow, expression `<condition>` is evaluated, `<consequent>` statments are executed if condition is true
+    ```golang
+    if <condition> {
+      <consequent.
+    }
+    ```
+    - For Loops, iterates while a condition is true, may have an initialization nd update operation
+    ```golang
+    for <init>; <cond>;
+    <update> {
+      <stmts>
+    }
+    ```
+    - example 1: 
+    ```golang
+    for i:=0; i<10; i++ {
+      fmt.Printf("hi ")
+    }
+    ```
+    - example 2: 
+    ```golang
+    i = 0 
+    for i < 10 {
+      fmt.Printf("hi ")
+      i++
+    }
+    ```
+    - example 3: 
+    ```golang
+    for [fmt.Printf("hi ")]
+    ```
+  - Switch/Case
+    - Switch is a multi-way if statement
+    - Switch may contain a tag which is a variable to be checked
+    - Tag is compared to a constant defined to each case
+    - case which matches tag is executed
+    - example 1:
+    ```golang
+    switch x {
+    case 1: 
+      fmt.Printf("case1")
+    case 2: 
+      fmt.Printf("case2")  
+    default: 
+      fmt.Printf("nocase")
+    }
+    ```
+  - Tagless Switch, a switch without a tag, case contains a boolean expression to evaluate, first true case is executed
+    - example 1 to use if you dont wnat to use if else, if else...: 
+    ```golang
+    switch {
+    case x > 1: 
+      fmt.printf("case1")
+    case x < -1:
+      fmt.Printf("case2")
+    default: 
+      fmt.Printf("nocase")
+    }
+    ```
+  - Break and Continue
+    - break exits the containing loop, considered bad form
+    - example 1
+    ```golang
+    i := 0 
+    for i < 10 {
+      i++ 
+      if i == 5 { break }
+      fmt.Printf("hi ")
+    }
+    ```
+    - Continue skips the rest of the current iteration
+    - example 2 
+    ```golang
+    i := 0 
+    for i < 10 {
+      i++ 
+      if i == 5 { continue }
+      fmt.Printf("hi ")
+    }
+    ```
+  - Scan
+    - Scan reads user input
+    - Takes a pointer as an argument 
+    - Typed data is written to pointer
+    - example 1, when the user types in five and hits enter, that scan function takes that number five, puts it into the appleNum variable. So on the next line, when I say, printf appleNum, it'll print five or whatever integer they typed in.
+    ```golang
+    vr appleNum int
 
-
-
-
+    fmt.Printf("number of apples?")
+    num, err :=
+    fmt.scan(&appleNum) // means the address of the AppleNum variable, 
+    fmt.Printf(appleNum)
+    ```
