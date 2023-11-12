@@ -270,7 +270,7 @@ func g() {
     - Typed data is written to pointer
     - example 1, when the user types in five and hits enter, that scan function takes that number five, puts it into the appleNum variable. So on the next line, when I say, printf appleNum, it'll print five or whatever integer they typed in.
     ```golang
-    vr appleNum int
+    var appleNum int
 
     fmt.Printf("number of apples?")
     num, err :=
