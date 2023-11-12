@@ -134,21 +134,5 @@ func g() {
   - ASCII and Unicode
     - Character coding - each character is associated with an (7) 8-Bit number ex. 'A'=0x41 in hexidesimal 
     - Unicode is 32-bit character. UTF-* is variable length 8-bit UTF codes are the same as ASCII  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  - Code points are unicode characters, and a Rune is a code point in Go
 
