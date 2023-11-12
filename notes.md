@@ -25,10 +25,6 @@ Object-Oriented Programming:
   -Needs a function `main()`
   -`main()` is where the code execution starts
 
-| Pro   | Con    |
-|--------------- | --------------- |
-| Icecream   | cake   |
-
 
 
 ## Go Tools 
@@ -132,7 +128,36 @@ func g() {
 
 - Strings
   - ASCII and Unicode
-    - Character coding - each character is associated with an (7) 8-Bit number ex. 'A'=0x41 in hexidesimal 
-    - Unicode is 32-bit character. UTF-* is variable length 8-bit UTF codes are the same as ASCII  
-  - Code points are unicode characters, and a Rune is a code point in Go
+    - Character coding - each character is associated with an (7) 8-Bit number ex. 'A'=0x41 in hexadecimal 
+    - Unicode is 32-bit character. UTF-8 is variable length 8-bit UTF codes are the same as ASCII  
+    - Code points are Unicode characters, and a Rune is a code point in Go
+  - String literal are notated by double quotes where each byte is a rune (UTF-8 code point)
+    ```golang 
+    x := "Hi there"
+    ```
+  - Unicode Package
+    - Runes are divided into many different categories
+    - Provides a set of functions to test categories of runes
+    ```golang
+    IsDigit(r rune)
+    IsSpace(r rune)
+    IsLetter(r rune)
+    IsLower(r rune)
+    IsPunct(r rune)
+    ```
+    - Some functions perform conversions
+    ```golang
+    ToUpper(r rune)
+    ToLower(r rune)
+    ```
+  - Strings Package of functions to manipulate UTF-8 encoded strings, strings are immutable but moddifed strings are returned
+    - `compare (a, B)` returns an integer comparing two strings lexicongraphally. 0 if a==b if a < b, and +1 if a > b. 
+    - `Contains(s, substr)` returns true if substring is inside s
+    - `Replace(s, old, new, n)` replace returns a copy of the string s with the first n instances of old replaced by new
+    - `ToLower(s)`
+    - `ToUpper(s)`
+    - `TrimSpace(s)` returns a new string with all leading and trailing white space removed
+
+
+
 
