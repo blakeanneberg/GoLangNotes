@@ -277,3 +277,6 @@ func g() {
     fmt.scan(&appleNum) // means the address of the AppleNum variable, 
     fmt.Printf(appleNum)
     ```
+
+
+

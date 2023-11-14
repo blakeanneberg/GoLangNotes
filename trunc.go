@@ -7,8 +7,8 @@ import (
 
 func main () {
   fmt.Println("Number of apples?")
-  var appleNum int8 
+  var appleNum float64 
   fmt.Scanln(&appleNum)
-  appleNum := int8(math.Trunc(appleNum))
+  (math.Trunc(appleNum))
   fmt.Printf("%d\n", appleNum)
 }
