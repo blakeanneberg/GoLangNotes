@@ -17,7 +17,7 @@ Object-Oriented Programming:
 -Go includes Concurrency primitives
 -`Goroutines` represent concurrent tasks
 -`channels` are used to communicate between tasks
--`select` enables task synchronization
+-`select` enables task synchronizatioon
 
 ## Packages
 -First line of file names the package
