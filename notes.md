@@ -82,6 +82,21 @@ func g() {
   ptr := new(int)
   *ptr = 3
   ``` 
+- Numeric
+  - `int`
+  - `float`
+- Boolean
+  - `true`
+  - `false`
+- String
+
+- Derived
+  - Pointer
+  - Array 
+  - Structure
+  - Map
+  - Interface 
+
 
 - Printing
   - Conversion characters for each argument
